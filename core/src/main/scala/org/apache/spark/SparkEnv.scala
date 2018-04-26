@@ -156,6 +156,7 @@ object SparkEnv extends Logging {
    * Returns the SparkEnv.
    */
   def get: SparkEnv = {
+    logInfo(s"Get sparkEnv for user: ${user}")
     env.get(user)
   }
 
